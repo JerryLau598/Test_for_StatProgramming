@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+
+%--------------------------------------宏包
+
+%\usepackage{fourier}%字体，好看点
+\usepackage{amsmath}%数学环境
+\usepackage{amssymb}%数学符号
+\usepackage{mathrsfs}%花体字宏包 $mathcal{x}$
+\usepackage{microtype}%调整单词字母的间距
+\usepackage{CJK}%中文
+\usepackage{ulem}%下划线 uline{}
+\usepackage{enumerate}%自定义编号
+\usepackage{arydshln}%增广矩阵，例子见vglaWeek3
+\usepackage{graphicx}%插入图片
+\usepackage{setspace}%行距
+\usepackage{mathtools}%：=符号的宏包 \coloneqq 为需要
+\usepackage{MnSymbol,wasysym}%John的宏包
+
+%----------------------------------------排版
+
+\textwidth16cm%正文宽
+\textheight23cm %正文高
+\voffset-2cm %正文的垂直偏移
+\topmargin0cm%页眉到页边的距离
+\oddsidemargin0cm %奇数页的左面页边距
+\evensidemargin0cm %偶数页的左面页边距
+\parindent0.0cm%段落缩进距离
+\parskip1.2ex plus0.5ex minus0.5ex%段落间的距离
+\renewcommand{\baselinestretch}{1.2} 
+
+%----------------------------------------大写字母
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\bd}{\mathbf{d}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\bn}{\mathbf{n}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\bz}{\mathbf{0}}
+
+%----------------------------------------常用数学符号
+
+\newcommand{\AR}[1]{\overrightarrow{#1}}
+\newcommand{\pic}[2]{\begin{center}\includegraphics[width={#2}]{images/{#1}}\end{center}}
+\newcommand{\lra}{\quad\Longrightarrow\quad}%向右单箭头
+\newcommand{\llra}{\quad\Longleftrightarrow\quad}%双箭头
+\newcommand{\soln}{\textbf{Solution}}
+\newcommand{\pf}{\textbf{Proof}}
+\newcommand{\kasten}{{\hspace*{\fill}$\Box$}}
+\newcommand*{\QED}{\hfill\ensuremath{\square}}%QED号
+\newcommand{\dps}{\displaystyle}%单行数学显示，为了好看
+\newcommand{\eps}{\varepsilon}%epsilon,方便
+\newcommand{\ra}{\rightarrow}%lim下面的右箭头
+\newcommand{\lntoi}{\lim_{n \ra \infty}}%lim n →∞的全部部分
+\newcommand{\lktoi}{\lim_{k \ra \infty}}%lim n →∞的全部部分
+\newcommand{\lxtoi}{\lim_{x \ra \infty}}%lim x →∞的全部部分
+\newcommand{\serk}{\sum^\infty_{k=1}}%级数上面无穷大，下面k=1
+\newcommand{\sern}{\sum^\infty_{n=1}}%同上，下面n=1
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}%微分正体d
+\newcommand{\pa}{\partial}%偏微分
+\DeclareMathOperator{\sech}{sech}%sech x
+\DeclareMathOperator{\Var}{Var}% variance
+\newcommand{\set}[1]{\{#1\}}
+\newcommand\abs[1]{\left\lvert #1 \right\rvert}
+\newcommand{\ceil}[1]{\left \lceil{#1}\right \rceil } %ceil函数
+\newcommand{\floor}[1]{\left \lfloor{#1}\right \rfloor } %floor函数
+
+
+%------------------------------------------------罗马字母
+
+\newcommand{\ap}{\alpha}
+\newcommand{\bt}{\beta}
+\newcommand{\og}{\Omega}
+
+%-----------------------------------------------
+
+
+
+%highest common factor--------------------------
+
+\DeclareMathOperator{\HCF}{hcf}
+\newcommand{\hcf}[2]{\HCF(#1,#2)}
+\newcommand{\cog}[3]{#1 \equiv #2 \pmod{#3}}
+
+%--------------------------------------------
+
+%--------------------------------------------
+\newcommand{\inv}{^{-1}}
+\newcommand{\swaprows}[2]{#1 \circlearrowleft\, #2}
+\newcommand{\augmat}[2]{\begin{tabular}{c|c}
+$\D\left(\begin{matrix}#1\end{matrix}\right.$ &
+$\D\left.\begin{matrix}#2\end{matrix}\right)$\end{tabular}}
+\newcommand{\rowoperation}[3]{\begin{center}$\fbox{$\D #3$}\qquad\qquad$\begin{tabular}{c|c}
+$\D\left(\begin{matrix}#1 \end{matrix}\right.$ &
+$\D\left.\begin{matrix}#2
+\end{matrix}\right)$\end{tabular}\end{center}}
+\newcommand{\matoperation}[2]{\begin{center}$\fbox{$\D #2$}\qquad\qquad\left(\begin{matrix}#1\end{matrix}\right)$\end{center}}
+\newcommand{\rowoperationelem}[4]{\begin{center}$\fbox{$\D #3$}\,\,\,$\begin{tabular}{c|c}
+$\D\left(\begin{matrix}#1 \end{matrix}\right.$ &
+$\D\left.\begin{matrix}#2\end{matrix}\right)$\end{tabular}$\,\,\,\D
+#4 $\end{center}}
+\newcommand{\D}{\displaystyle}
+%------------------------------------------------------
+%分界线，上面部分为Elementary matrix的新命令by John
+
+
+
+\begin{document}
+\begin{spacing}{1.5}
+\centerline{\Large \bf Statistics - Formative Assessment}
+\center{\Huge Group 10}
+
+\begin{enumerate}[{\bf (1)}]
+
+\end{enumerate}
+\end{spacing}
+\end{document}
