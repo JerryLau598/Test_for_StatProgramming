@@ -20,4 +20,3 @@ Here are the steps we want to realize using cmd or Terminal
     * The new file indeed uploded into the repo
 
 6. Sharing the repo
-7. 
