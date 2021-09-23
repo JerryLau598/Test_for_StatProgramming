@@ -22,3 +22,5 @@ Here are the steps we want to realize using cmd or Terminal
 6. Sharing the repo
 
 7. TO SEE WHAT HAPPENED
+
+8. When you go to the procedure git push and ask you to input the username and password, here the **password** is not the password of your account, it is the ** PERSONAL ACCESS TOKEN**, where you can find them in the right upper corner -> setting -> Developer setting -> create your own token.
